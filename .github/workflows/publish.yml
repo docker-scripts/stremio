@@ -30,6 +30,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: stremio/
-          platforms: linux/amd64,linux/arm64/v8,linux/arm/v7
+          # platforms: linux/amd64,linux/arm64/v8,linux/arm/v7
+          platforms: linux/amd64,linux/arm64
           push: true
           tags: n0bodysec/stremio:latest
